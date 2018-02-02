@@ -1,0 +1,33 @@
+Merge
+遠端增加一個file並且commit
+本機端也增加一個新commit
+兩邊的commit tree已經不同時如何進行同步？
+
+(1) git fetch --all 更新 "所有" remote 底下的分支
+等同於 git remote update
+(2) git pull ‘remote name’ ‘brench name’
+ 同步本地端分支（Merge）
+等同於
+$ git fetch ‘repo_name’
+$ git merge remotes/github/master
+
+
+Rebase
+將遠端的FileForTestMerge&Rebase.txt進行更新
+實驗rebase
+如何進行同步並觀察與merge的差異？
+
+方法：
+$ git pull --rebase
+將遠端資料更新至local
+並且添加遠端commit到local端主線
+減少分之產生
+使commit更精簡
+
+差異在於：
+rebase減少分支產生
+使commit更為精簡
+特別適合用於
+當分支需要長時間開發
+而專案的主分支又持續更新時
+就能每隔一段時間rebase一次

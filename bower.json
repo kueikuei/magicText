@@ -1,0 +1,20 @@
+{
+  "name": "magicText",
+  "description": "因為專案對 \"文字\" 的操作很頻繁，基於 \"不重工\" 的原則   決定開發一個 Magic Text 模組造福大眾~",
+  "main": [
+    "dist/index.html",
+    "src/magicText.js"
+  ],
+  "authors": [
+    "KueiKuei <r03228001@ntu.edu.tw>"
+  ],
+  "license": "ISC",
+  "homepage": "http://192.168.0.51/Kuei/exam/tree/closure/dist",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

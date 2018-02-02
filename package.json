@@ -1,0 +1,24 @@
+{
+  "name": "exam",
+  "version": "1.0.0",
+  "description": "因為專案對 \"文字\" 的操作很頻繁，基於 \"不重工\" 的原則   你決定開發一個 Magic Text 模組造福大眾~",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://192.168.0.51/Kuei/exam"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  }
+}

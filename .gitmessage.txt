@@ -1,0 +1,7 @@
+# feature:  加新功能
+# fix:      錯誤修正
+# refactor: 重構程式碼
+# docs:     修改文件，不會動到 production code
+# style:    調整 coding style，不會動到 production code
+# test:     新增、重構測試程式，不會動到 production code
+# chore:    自動化、佈署、建構環境異動，不會動到 production code

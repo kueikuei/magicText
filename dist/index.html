@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<!-- <script data-main="../src/magicText.js" src="../scripts/require.js"></script> -->
+
+	<script src = "../src/magicText.js"> </script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- <object type="text/html" data="demo.html" ></object> -->
+	<!-- <link rel="import" href="demo.html"> -->
+
+</head>
+<body>
+	<div id="result"></div>
+
+	<script>  
+		/*-------------------namespace(closure)---------------------*/
+		/*-------------------namespace(closure)---------------------*/
+		/*-------------------namespace(closure)---------------------*/
+
+		var text = 'hello world'; 
+
+		text = magicText.replaceSpace('-', text) // return "hello-world"
+		
+		text = magicText.upperCase(text); // return "HELLO-WORLD"
+		
+		magicText.render('result', text);
+
+
+		/*-------------------constructor---------------------*/
+		/*-------------------constructor---------------------*/
+		/*-------------------constructor---------------------*/
+
+		// var magicText = new MagicText('hello world');
+
+		// text = magicText.replaceSpace('-', text); // return "hello-world"	
+		// text = magicText.upperCase(text); // return "HELLO-WORLD";
+
+		// magicText.render('result', text);
+
+		/*-------------------chaining---------------------*/
+		/*-------------------chaining---------------------*/
+		/*-------------------chaining---------------------*/
+
+		// var magicText = new MagicText('hello world');
+
+		// magicText
+		// 	.replaceSpace('-')
+		//   	.upperCase()
+		//   	.render('result');
+
+		/*-------------------requirejs---------------------*/
+		/*-------------------requirejs---------------------*/
+		/*-------------------requirejs---------------------*/
+
+		// require(['MagicText'],function(a){
+		// 	var magicText = new a.MagicText('hello world');
+
+		// 	magicText
+		// 		.replaceSpace('-')
+		// 		.upperCase()
+		// 		.render('result');
+
+		// });
+		/*-------------------callback design---------------------*/
+		/*-------------------callback design---------------------*/
+		/*-------------------callback design---------------------*/
+		// function myRender(demo){
+		// 	alert(demo);
+		// }
+
+		// var magicText = new MagicText('hello world');
+
+		// magicText.load('demo.html',myRender);
+
+		/*-------------------jQuery Deferred---------------------*/
+		/*-------------------jQuery Deferred---------------------*/
+		/*-------------------jQuery Deferred---------------------*/
+		/*
+		var text = new MagicText();
+
+        function myRender(demo){
+            alert(demo);
+        }
+
+        text
+            .load('demo.html')
+            .then(myRender);
+		*/
+	</script>
+
+
+</body>
+</html>
